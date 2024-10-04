@@ -1,0 +1,77 @@
+@layer reset, init, design;
+
+@import url(normalize.css) layer(reset);
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap) layer(init);
+
+@layer init {
+    :root {
+        --primary: #66d4d4;
+        --text: #000000;
+        --black: #000000;
+        --light: #FFFFFF;
+        --gray: #3B3E40;
+    }
+    html {
+        font-family: "Open Sans", sans-serif;
+        color: var(--black);
+        font-weight: 400;
+    }
+    .page__logo::before {
+        content: "";
+        display: block;
+        background: center / contain no-repeat transparent;
+        
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url("../images/logo.svg");
+        width: 2em;
+        height: 1em;
+        font-size: 1.5em;
+        margin-top: 1.5em;
+        background-size: 100%;
+    }
+    .page__logo > span {
+        display: none;
+    }
+
+}
+
+/* VRSTVA PRO VAŠE STYLY */
+@layer design {
+   
+    .button{
+        border: solid;
+        border-color: #817b7b;
+        border-radius: .5em;
+        padding: 5px 20px ;
+        background-color: #817b7b;
+        text-decoration: none;
+        color: var(--black, black);
+        margin-top: 20px;
+    }
+    .button:hover{
+        border: solid;
+        border-color: #000000;
+        border-radius: .5em;
+        padding: 5px 20px ;
+        background-color: #000000;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+
+    }
+.image-responsive{
+    display: block;
+    width: 100%;
+align-self: center;
+
+
+}
+
+
+figcaption{
+    text-align: center;
+    margin-top: 8px;
+}
+}
+
