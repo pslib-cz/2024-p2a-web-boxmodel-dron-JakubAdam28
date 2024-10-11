@@ -18,21 +18,27 @@
     }
     .page__logo::before {
         content: "";
-        display: block;
+        display: inline-block;
         background: center / contain no-repeat transparent;
-        
-        background-position: center;
+       background-position: center;
+        text-align: center;
         background-size: contain;
         background-repeat: no-repeat;
         background-image: url("../images/logo.svg");
-        width: 2em;
         height: 1em;
         font-size: 1.5em;
-        margin-top: 1.5em;
-        background-size: 100%;
+        padding-top: 30px;
+        margin-top: 20px;
+        width: 100%;
+        
+    
+    
+        
     }
     .page__logo > span {
         display: none;
+        color: inherit;
+        /*padding-top: 30px;*/
     }
 
 }
@@ -42,10 +48,10 @@
    
     .button{
         border: solid;
-        border-color: #817b7b;
+        border-color: #fffdfd;
         border-radius: .5em;
         padding: 5px 20px ;
-        background-color: #817b7b;
+        background-color: #fffdfd;
         text-decoration: none;
         color: var(--black, black);
         margin-top: 20px;
@@ -59,6 +65,11 @@
         text-decoration: none;
         color: rgb(255, 255, 255);
 
+    }
+
+
+    .button--light{
+       background-color:var(--primary);
     }
 .image-responsive{
     display: block;
@@ -75,3 +86,43 @@ figcaption{
 }
 }
 
+.mmax{
+    background-color: #817b7b;
+    
+    color: white;
+    display: block;
+    width: 50%;
+text-align: center;
+align-self: center;
+}
+
+.page__header{
+    color: white;
+    background-image: url(/images/header-2560w.webp);
+    background-size: cover;
+    height: 70vh;
+    padding-bottom: 10px;
+}
+
+.page__intro{
+
+    width: 40%;
+    margin-top: 20%;
+    margin-left: 10%;
+}
+
+
+.hd{
+    font-size: 60px;
+    margin-bottom: 20px;
+
+}
+.reducer{
+    text-align: center;
+}
+
+/*.page__logo{
+    display: inline-block;
+padding: 1em;
+
+}*/
