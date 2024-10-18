@@ -18,18 +18,18 @@
     }
     .page__logo::before {
         content: "";
-        display: inline-block;
+        display: block;
         background: center / contain no-repeat transparent;
        background-position: center;
         text-align: center;
         background-size: contain;
         background-repeat: no-repeat;
         background-image: url("../images/logo.svg");
-        height: 1em;
+        height: 100%;
         font-size: 1.5em;
-        padding-top: 30px;
+        padding: 15px;
         margin-top: 20px;
-        width: 100%;
+        width: auto;
         
     
     
@@ -55,6 +55,7 @@
         text-decoration: none;
         color: var(--black, black);
         margin-top: 20px;
+        font-weight: bold;
     }
     .button:hover{
         border: solid;
@@ -64,12 +65,16 @@
         background-color: #000000;
         text-decoration: none;
         color: rgb(255, 255, 255);
-
+        text-decoration: underline;
+        cursor: pointer;
+        font-weight: bold;
     }
 
 
     .button--light{
        background-color:var(--primary);
+       border-color:var(--primary);
+       margin-top: 20px
     }
 .image-responsive{
     display: block;
@@ -80,7 +85,7 @@ align-self: center;
 }
 
 
-figcaption{
+.picture-box__caption{
     text-align: center;
     margin-top: 8px;
 }
@@ -107,8 +112,9 @@ align-self: center;
 .page__intro{
 
     width: 40%;
-    margin-top: 20%;
-    margin-left: 10%;
+    margin-top: 20em;
+    margin-left: 1em;
+    margin-bottom: 2em;
 }
 
 
@@ -117,12 +123,55 @@ align-self: center;
     margin-bottom: 20px;
 
 }
-.reducer{
-    text-align: center;
+
+
+.page__logo{
+    display: block;
+height: 2em;
+margin: 0 auto;
+padding: 20px
+}
+.funkce{
+    padding: 1em;
+}
+.picture-box{
+margin:0 ;
 }
 
-/*.page__logo{
-    display: inline-block;
-padding: 1em;
+.raw{
+    border: solid;
+    border-color: var(--primary);
+    border-width: 3px;
+    padding: 20px;
+    margin:15px
+}
 
-}*/
+.typy{
+    padding: 20px;
+}
+ul ::marker{
+    color:var(--primary)
+}
+
+.purchase{
+     padding: 20px ;
+}
+.purchase1{
+    display: inline-block;
+     max-width: 24em;
+}
+.purchase-2{
+    display: inline-block;
+    margin-top: 2em;
+    max-width: 24em;
+}
+.inline-image-responsive{
+    display: inline-block;
+    max-width: 24em;
+align-self: center;
+
+
+}
+.mmax{
+
+}
